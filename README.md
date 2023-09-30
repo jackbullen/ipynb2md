@@ -15,7 +15,7 @@ This extension requires the following software to be installed on your system:
 
 ## Usage
 
-1. Install the extension
+1. [Install the extension](https://vscode-docs.readthedocs.io/en/stable/extensions/install-extension/#:~:text=Simply%20install%20using%20the%20VS,vsix%20file.&text=The%20extension%20will%20be%20installed,vscode%2Fextensions%20folder.) using the vsix file.
 2. Open a Jupyter Notebook (`.ipynb`) file
 3. Press `Ctrl+Shift+P` to open the command palette
 4. Type `Convert Notebook` to see the available commands
