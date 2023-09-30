@@ -3,9 +3,9 @@ import * as cp from 'child_process';
 
 export function activate(context: vscode.ExtensionContext) {
     let disposableMd = vscode.commands.registerCommand('extension.convertNotebook', () => {
-        const editor = vscode.window.activeTextEditor;
+        const editor = vscode.window.activeNotebookEditor;
         if (editor) {
-            const filePath = editor.document.uri.fsPath;
+            const filePath = editor.notebook.uri.fsPath;
             if (filePath.endsWith('.ipynb')) {
                 convertToMarkdown(filePath);
             } else {
@@ -17,9 +17,9 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     let disposableDocx = vscode.commands.registerCommand('extension.convertNotebookDocx', () => {
-        const editor = vscode.window.activeTextEditor;
+        const editor = vscode.window.activeNotebookEditor;
         if (editor) {
-            const filePath = editor.document.uri.fsPath;
+            const filePath = editor.notebook.uri.fsPath;
             if (filePath.endsWith('.ipynb')) {
                 convertToDocx(filePath);
             } else {
