@@ -19,7 +19,12 @@
     {
         "command": "extension.convertNotebookDocx",
         "title": "Convert Notebook to Word Document"
-    }]    
+    },
+    {
+      "command": "extension.convertMarkdownToPdf",
+      "title": "Convert Markdown to PDF"
+  }
+  ]    
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
